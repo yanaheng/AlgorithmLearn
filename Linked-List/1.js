@@ -8,7 +8,12 @@
 //          此时，headA 到 pB 的长度就为两链表的长度差，pB 到链表的长度与 headB 到链尾的长度一致
 //          此时，可将 pA 指向 headB ，然后同步遍历 pB 及 pA ，直到有相交节点，返回相交节点，否则返回 null
 
-
+/**
+ * @param {object} headA
+ * @param {string} headA.id
+ * @param {object} headA.next
+ * @return {object}
+ */
 const getIntersectionNode = (headA, headB) => {
     // 清除高度差
     let pA = headA, pB = headB
@@ -37,5 +42,4 @@ console.log(getIntersectionNode(B1, B2))
 // 时间复杂度：O(n)
 // 空间复杂度：O(1)
 
-// 作者：user7746o
 // 链接：https://leetcode-cn.com/problems/intersection-of-two-linked-lists/solution/tu-jie-leetcode160xiang-jiao-lian-biao-by-user7746/
